@@ -14,8 +14,13 @@ const List = (props) => {
   }
   return (
     <form onSubmit={handelSubmit}>
-      <input type="text" value={myInput} onChange={handelChange} />
-      <input type="submit" value="ToDo" />
+      <input
+        className="input"
+        type="text"
+        value={myInput}
+        onChange={handelChange}
+      />
+      <input className="click" type="submit" value="ToDo" />
     </form>
   );
 };

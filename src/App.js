@@ -19,10 +19,12 @@ function App() {
   };
   return (
     <React.Fragment>
-      <Header />
-      <List setList={setList} />
-      <ToDo list={list} remove={remove} checkToDo={check} />
-      <Footer />
+      <div className="app">
+        <Header />
+        <List className="todo-list" setList={setList} />
+        <ToDo className="todo" list={list} remove={remove} check={check} />
+        <Footer />
+      </div>
     </React.Fragment>
   );
 }

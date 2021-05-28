@@ -17,7 +17,6 @@ const ToDo = (props) => {
       </i>
     </li>
   ));
-
   return <ul>{userTodos} </ul>;
 };
 export default ToDo;

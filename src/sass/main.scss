@@ -1,7 +1,81 @@
 body {
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  background-color: rgb(168, 179, 175);
+  font-family: "Pattaya", sans-serif;
+}
+li {
+  display: flex;
+  list-style: none;
+  width: 70%;
+  height: 2rem;
+  padding-top: 6px;
+  background-color: rgba(175, 110, 66, 0.459);
+  margin: 1rem;
+  border-radius: 10%;
+  justify-content: space-between;
+}
+li {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.app {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-image: url("../img/paper-background-photo.jpg");
+  height: 100vh;
+  padding-left: 40%;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-direction: row;
+  height: 3rem;
+  border: none;
+  background-color: rgba(175, 110, 66, 0.459);
+  border-radius: 100%;
+}
+.click {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  font-family: "Pattaya", sans-serif;
+  font-size: 1rem;
+  background-color: rgba(175, 110, 66, 0.459);
+  border-radius: 100%;
+}
+.todo-list {
+  background: #e8e8e8;
+  border-radius: 4px;
+  max-width: 400px;
+  padding: 5px;
+}
+
+.todo {
+  align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 3px 10px;
 }
