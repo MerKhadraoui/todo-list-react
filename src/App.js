@@ -10,11 +10,13 @@ function App() {
     setList(newArr);
   };
   const check = (itemsToCheck) => {
-    list.filter((item) => {
-      if (item.id === itemsToCheck) {
-        item.done = !item.done;
-      }
-      return item;
+    setList((prevState) => {
+      prevState.filter((item) => {
+        if (item.id === itemsToCheck) {
+          item.done = !item.done;
+        }
+        return item;
+      });
     });
   };
   return (

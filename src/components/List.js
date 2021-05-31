@@ -1,4 +1,6 @@
 import { useState } from "react";
+// instal uuid in terminal Npm I uuid
+import { v4 as uuidv4 } from "uuid";
 const List = (props) => {
   const [myInput, setMyInput] = useState("");
   function handelChange(e) {
@@ -8,7 +10,7 @@ const List = (props) => {
     e.preventDefault();
     props.setList((prevState) => [
       ...prevState,
-      { id: prevState.lenght, title: myInput.trim(), done: false },
+      { id: uuidv4(), title: myInput.trim(), done: false },
     ]);
     setMyInput("");
   }
