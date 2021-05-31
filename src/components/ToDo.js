@@ -1,4 +1,31 @@
-const ToDo = (props) => {
+// const ToDo = (props) => {
+//   console.log(props.list);
+//   const userTodos = props.list;
+//   for (let i = 0; i < userTodos.length; i++) {
+//     console.log(userTodos[i]);
+//     <li key={i}>
+//       <input
+//         type="checkbox"
+//         defaultChecked={userTodos[i].done}
+//         onChange={() => props.check(userTodos[i].id)}
+//       />
+//       {userTodos[i].title}
+//       <i
+//         onClick={() => {
+//           console.log(userTodos[i].id);
+//           props.remove(userTodos[i].id);
+//         }}
+//       >
+//         🗑
+//       </i>
+//     </li>;
+//   }
+
+//   return <ul>{userTodos}</ul>;
+// };
+
+// export default ToDo;
+const Todo = (props) => {
   const userTodos = props.list.map((toDo, i) => (
     <li key={i}>
       <input
@@ -20,4 +47,4 @@ const ToDo = (props) => {
   return <ul>{userTodos}</ul>;
 };
 
-export default ToDo;
+export default Todo;
