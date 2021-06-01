@@ -1,3 +1,4 @@
+// usin for loop
 // const ToDo = (props) => {
 //   console.log(props.list);
 //   const userTodos = props.list;

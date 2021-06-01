@@ -1,5 +1,5 @@
 import { useState } from "react";
-// instal uuid in terminal Npm I uuid
+// install uuid in terminal run => (npm i uuid)
 import { v4 as uuidv4 } from "uuid";
 const List = (props) => {
   const [myInput, setMyInput] = useState("");
