@@ -18,7 +18,7 @@ A list of errands and other tasks – often written on a piece of paper as a mem
 ## Technologies:
 
 - `React`
-- `nod.js`
+- `npm`
 - `Scss`
 - `Javascript`
 
